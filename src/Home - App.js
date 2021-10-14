@@ -10,7 +10,7 @@ const Home = () => {
           { loading && <div>loading...</div> }
           {blogs && <Bloglist blogs={blogs} title="All Blogs"/>}
         </div>
-     );
+     ); 
 }
  
 export default Home;
