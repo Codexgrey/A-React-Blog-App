@@ -6,8 +6,10 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+      const abortCtrl = new AbortController();
+
         setTimeout(() => {     //simulating the normal lag in fetching data from server-side
-          fetch(url)
+          fetch(url, { signal: abortCtrl.signal })
             .then(res => {
               if (!res.ok) {   //checking response object's "Ok" method to see if we got a response back from the database
                 throw Error(`Couldn't fetch resource data`);
@@ -20,10 +22,16 @@ const useFetch = (url) => {
               setError(null);
             })
             .catch(err => {
-              setLoading(false);
-              setError(err.message);
+              if (err.name === 'AbortError') {
+                console.log('fetch aborted');
+              }else {
+                setLoading(false);
+                setError(err.message);
+              }
             });
-        }, 1000)
+        }, 1000);
+
+        return () => abortCtrl.abort(); //using the abort method on our controller
     }, [url]);
 
       return { data, loading, error };
