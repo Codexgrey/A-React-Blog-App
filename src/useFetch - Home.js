@@ -6,16 +6,16 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        setTimeout(() => { //simulating the normal lag in fetching data from server-side
+        setTimeout(() => {     //simulating the normal lag in fetching data from server-side
           fetch(url)
             .then(res => {
-              if (!res.ok) {
+              if (!res.ok) {   //checking response object's "Ok" method to see if we got a response back from the database
                 throw Error(`Couldn't fetch resource data`);
               }
               return res.json();
             })
             .then(data => {
-              setData(data)
+              setData(data);
               setLoading(false);
               setError(null);
             })
