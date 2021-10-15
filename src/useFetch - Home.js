@@ -6,23 +6,25 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
-          .then(res => {
-            if (!res.ok) {
-              throw Error(`Couldn't fetch resource data`);
-            }
-            return res.json();
-          })
-          .then(data => {
-            setData(data)
-            setLoading(false);
-            setError(null);
-          })
-          .catch(err => {
-            setLoading(false);
-            setError(err.message);
-          });
-      }, [url]);
+        setTimeout(() => { //simulating the normal lag in fetching data from server-side
+          fetch(url)
+            .then(res => {
+              if (!res.ok) {
+                throw Error(`Couldn't fetch resource data`);
+              }
+              return res.json();
+            })
+            .then(data => {
+              setData(data)
+              setLoading(false);
+              setError(null);
+            })
+            .catch(err => {
+              setLoading(false);
+              setError(err.message);
+            });
+        }, 1000)
+    }, [url]);
 
       return { data, loading, error };
 }
