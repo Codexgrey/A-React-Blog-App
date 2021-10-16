@@ -37,3 +37,4 @@ function App() {
 export default App;
 
 // The Navbar Comp is nested inside the Router Comp & is always gonna show up in each page, as it isn't nested inside the Switch Comp as well
+// Thoroughly enjoyed working on this!
