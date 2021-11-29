@@ -5,7 +5,7 @@ const Create = () => {
   // setting up states to track changes to fields
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')  
-  const [author, setAuthor] = useState('Mario') 
+  const [author, setAuthor] = useState('Codexgrey') 
   const [loading, setLoading] = useState(false) 
   const history = useHistory();
 
@@ -45,6 +45,7 @@ const Create = () => {
 
           <label>Blog author:</label>
           <select value={ author } onChange={(e) => setAuthor(e.target.value)}>  {/*same as above*/}
+            <option value="Codexgrey">Codexgrey</option>
             <option value="mario">Mario</option>
             <option value="yoshi">Yoshi</option>
           </select>
