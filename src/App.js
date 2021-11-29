@@ -12,7 +12,7 @@ function App() {
         <Navbar /> 
         <div className="content">
           <Switch>
-            <Route exact path="/React-Ninja-101---Blog-App/">
+            <Route exact path="/home">
                 <Home /> 
             </Route>
 
