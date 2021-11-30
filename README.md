@@ -1,4 +1,4 @@
-# To view deployed app
+# To VIEW DEPLOYMENT
 
 Visit - https://codexgrey.github.io/React-Ninja-101---Blog-App/  and click on "Home" or "Lets head back to the Homepage" 
 
