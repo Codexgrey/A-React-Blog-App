@@ -1,6 +1,6 @@
 {
   "name": "react-ninja-101",
-  "homepage": "http://codexgrey.github.io/React-Ninja-101---Blog-App",
+  "homepage": "http://Codexgrey.github.io/React-Ninja-101---Blog-App/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,8 +21,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "npx json-server --watch data/db.json --port=5800"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
