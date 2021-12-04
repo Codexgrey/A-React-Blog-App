@@ -7,7 +7,7 @@ const Create = () => {
   const [body, setBody] = useState('')  
   const [author, setAuthor] = useState('Codexgrey') 
   const [loading, setLoading] = useState(false) 
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,8 +23,8 @@ const Create = () => {
       console.log("New Blog Added");
       setLoading(false);
       // history.go(-1); useHistory re-directing us to the home page 
-      history.push("/")  
-      
+      navigate("/")  
+  
     }) 
   } 
 
