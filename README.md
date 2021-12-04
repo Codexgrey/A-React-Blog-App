@@ -2,7 +2,8 @@
 
 First - Clone this repo \
 Secondly - in your terminal run `npx json-server --watch data/db.json --port 8000`; \
-Thirdly - Visit -> https://codexgrey.github.io/React-Ninja-101---Blog-App/ AND click on "Home" Button OR "Lets head back to the Homepage" link...
+Thirdly - Visit -> https://codexgrey.github.io/React-Ninja-101---Blog-App/ AND click on "Home" Button \
+OR "Lets head back to the Homepage" link...
 
 ## Available Scripts
 
