@@ -1,6 +1,7 @@
 # To VIEW DEPLOYMENT
 
-Visit - https://codexgrey.github.io/React-Ninja-101---Blog-App/  and click on "Home" Button 
+Visit - https://codexgrey.github.io/React-Ninja-101---Blog-App/ \ 
+click on "Home" Button \
 or "Lets head back to the Homepage" link...
 
 ## Available Scripts
@@ -11,6 +12,10 @@ In the project directory, you can run:
 ### `yarn install`
 
 Installs all app dependencies and creates node_modules folder
+
+### `npx json-server --watch data/db.json --port 8000`
+
+This allows json-server to watch out fake REST API database...
 
 ### `yarn start`
 
