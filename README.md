@@ -1,6 +1,6 @@
 # To VIEW DEPLOYMENT
 
-Visit - https://codexgrey.github.io/React-Ninja-101---Blog-App/ \ 
+Visit - https://codexgrey.github.io/React-Ninja-101---Blog-App/ \\
 click on "Home" Button \
 or "Lets head back to the Homepage" link...
 
